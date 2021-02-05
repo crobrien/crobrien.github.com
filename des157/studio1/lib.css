@@ -44,4 +44,17 @@ article{
     font-size: 2em;
 }
 
+footer{
+    width: 800px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'play';
+    color: white;
+}
+
+footer a{
+    color: white;
+}
 
