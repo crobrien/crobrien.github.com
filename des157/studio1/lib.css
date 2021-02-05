@@ -1,0 +1,47 @@
+body {
+    background-image: url(img/wavebkg-01.svg);
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: yusei magic;
+    font-size: 5em;
+}
+
+h2{
+    position: absolute;
+    margin-left: 50px;
+    top: 100px;
+    font-family: yusei magic;
+    font-size: 2em;
+}
+
+form {
+    width: 400px;
+    margin: 50px;
+    border: 10px;
+    padding: .5em;
+    border-radius: 4%;
+    background-color: rgba(255, 255, 255, 0.658);
+    font-family: monsterrat;
+    font-size: 1.5em;
+}
+
+article{
+    position: absolute;
+    left: 700px;
+    top: 20px;
+    width: 500px;
+    margin: 10px;
+    border: 10px;
+    padding: 1em;
+    border-radius: 4%;
+    background-color: rgba(255, 255, 255, 0.658);
+    font-family: montserrat;
+    font-size: 2em;
+}
+
+
