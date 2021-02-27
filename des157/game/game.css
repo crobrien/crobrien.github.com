@@ -1,0 +1,180 @@
+body {
+    background-color: #05bac7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  
+  h1 {
+    font-size: 10em;
+    font-family: 'Varela Round';
+    font-weight: 800;
+    color: white;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 4em;
+    font-family: 'Varela Round';
+    font-weight: 700;
+    color: black;
+    margin-top: 0;
+  }
+
+  button {
+    padding: 10px 40px;
+    font-size: 3em;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    background-color: white;
+    width: 250px;
+    border-style: none;
+    border-radius: 30%;
+  }
+  
+  button:hover {
+    color:#fd75b5
+  }
+  
+  input {
+    font-size: 5em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    padding: 40px;
+    width: 40%;
+    margin-bottom: 50px;
+    border-style: none;
+  } 
+  
+  .game {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .activeGame {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  #center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .score {
+    font-size: 10em;
+    margin: 0;
+  }
+  
+  .name {
+    font-size: 4em;
+    font-family: 'Varela Round';
+    font-weight: 600;
+    color: white;
+    margin: 0;
+  }
+  
+  .dice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+.options {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  
+  .options button:first-child {
+    margin-right: 10px;
+  }
+  
+  .options button:last-child {
+    margin-left: 10px;
+  }
+  
+  .whoseTurn {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 50px;
+  }
+  
+  .whoWins {
+    text-align: center;
+    font-size: 6em;
+    margin: 0 0 35px 0;
+    line-height: 95%;
+  }
+  
+  .blue {
+    color: #ffffff;
+  }
+  
+  .red {
+    color: #ffffff;
+  }
+  
+  .leftDie {
+    margin-right: 20px;
+  }
+  
+  .rightDie {
+    margin-left: 20px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #leftPlayer, #rightPlayer {
+    width: 30%;
+  }
+  
+  #rightPlayer .name, #rightPlayer .score {
+    text-align: right;
+  }
+  
+  
+  img {
+    height: 250px;
+    width: 250px;
+  }
+
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  footer a {
+    font-size: 1.2em;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
+  
