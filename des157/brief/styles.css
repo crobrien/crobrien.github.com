@@ -1,0 +1,197 @@
+body{
+    background-image: url(wrld-01.svg);
+    background-size: 2400px;
+    background-repeat: no-repeat;
+    background-color: rgb(11, 11, 82);
+}
+
+header{
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(190, 238, 250);
+    font-family: 'play';
+    font-size: 2.5em;
+}
+
+main{
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+main h2{
+    padding-left: 10px;
+    font-family: 'play';
+    color:rgb(11, 11, 82);
+    font-size: 2em;
+    margin-bottom: 1px;
+}
+
+#banner{
+    width: 800px;
+    height:250px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative; 
+}
+
+#circle1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: tran 3s infinite 2s;
+    position: absolute;
+    bottom: 250px;
+    left: 20px;
+}
+
+#circle2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: tran 3s infinite 3s;
+    position: absolute;
+    bottom: 230px;
+    left: 650px;
+}
+
+#circle3 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: tran 3s infinite 7s;
+    position: absolute;
+    bottom: 45px;
+    left: 730px;
+}
+
+#circle4 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 150px;
+}
+
+#circle5 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 250px;
+    left: 800px;
+}
+
+#circle6 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 170px;
+    left: 800px;
+}
+
+#circle7 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+}
+
+#circle8 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 300px;
+}
+
+#circle9 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 270px;
+    left: 500px;
+}
+
+#circle10 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+@keyframes tran{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+section{
+    width: 800px;
+    margin: 10px;
+    margin-top: 40px;
+    border: 10px;
+    border-style: outset;
+    border-color: rgb(190, 238, 250);
+    border-radius: 4%;
+    background-color: rgba(190, 238, 250, 0.658);
+    padding: 1em;
+}
+
+p{
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'montserrat';
+    font-weight: bold;
+    padding: 4px;
+}
+
+a{
+    text-decoration: underline;
+    color:rgb(11, 11, 82);
+}
+
+a :hover{
+    color:white
+}
+
+
+footer{
+    width: 800px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'play';
+    color: white;
+}
+
+footer a{
+    color: white;
+}
