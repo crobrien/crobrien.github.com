@@ -114,13 +114,13 @@ body {
   }
   
   #madLibOut {
-    line-height: 250%;
-    font-weight: 400;
+    line-height: 200%;
+    font-weight: 200;
     font-size: 2em;
   }
   
   .libWord {
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 400;
     padding: 10px;
     border-radius: 4px;
