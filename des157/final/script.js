@@ -19,11 +19,11 @@
             const input = document.createElement('input');
             input.setAttribute("type", "text");
             input.setAttribute("class", "currentInput");
-            input.setAttribute("id", "music");
+            input.setAttribute("id", "appointment");
             stylingDiv.appendChild(input);
   
             const label = document.createElement('label');
-            label.setAttribute("for", "music");
+            label.setAttribute("for", "appointment");
             label.innerHTML = "What is your name?";
             stylingDiv.appendChild(label);
   
@@ -36,7 +36,7 @@
   
             // processing the form
             const attributes = ["nouns", "treatment", "date1", "date2", "date3"];
-            const labels = ["What are your pronouns?", "What are you seeking treatment for? (i.e. anxiety)", "What date are you available?", "Provide an altrenative date", "Provide a second alternative"];
+            const labels = ["What are your pronouns?", "What are you seeking treatment for? (i.e. anxiety, cough)", "What day would you like to be seen?", "Please provide an altrenative date", "Please provide a second alternative"];
             let i = 0;
             let words = [];
   
@@ -47,13 +47,13 @@
             next.addEventListener('click', function(event) {
               event.preventDefault();
               if ((currentInput.value == null) || (currentInput.value == "")) {
-                alert(`Hey! Give me a ${currentLabel.innerHTML}!`);
+                alert(`Please provide a ${currentLabel.innerHTML}!`);
               }
               words.push(currentInput.value);
               currentInput.value = "";
-              if (i == (labels.length)) {  // done with the array
+              if (i == (labels.length)) {
                 // print out mad lib
-                mainContent.removeChild(mainContent.children[0]); // should delete form tag, which will be the only child
+                mainContent.removeChild(mainContent.children[0]);
                 const madLibTag = document.createElement('p');
                 madLibTag.setAttribute("id", "madLibOut");
                 madLibTag.innerHTML =
@@ -63,17 +63,17 @@
                   I am available <span class=\"libWord\">${words[3]}</span>, <span class=\"libWord\">${words[4]}</span> and <span class=\"libWord\">${words[5]}</span>;
                   Do you have openings during any of these times?`;
                 mainContent.appendChild(madLibTag);
-  
-              } else {  // more fields to be filled in
+
+              } else { 
                 currentInput.setAttribute("id", `${attributes[i]}`);
                 currentLabel.innerHTML = `${labels[i]}`;
                 currentLabel.setAttribute("for", `${attributes[i]}`);
-                if (i == (labels.length-1)) {  // at last item in array
+                if (i == (labels.length-1)) { 
                   next.setAttribute("value", "Get my MadLib!");
-                }  // if
-              }  // else nested
+                }  
+              }  
             i++;
-            });  // next event listener
-          });  // start button event listener
+            });  
+          });
   }());
   
