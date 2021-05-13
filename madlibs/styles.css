@@ -1,0 +1,259 @@
+body {
+    background-color: #88CA69;
+    color: #335E21;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 360%;
+    line-height: 12px;
+    color: white;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 125%;
+    letter-spacing: 0.2em;
+    color: #335E21;
+}
+
+b {
+    color: #0E2304; 
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #335E21;
+}
+
+header {
+    margin-top: 3%;
+    margin-left: 10%;
+    float: left;
+}
+
+.text {
+    position: relative;
+}
+
+footer {
+  position: absolute;
+  margin-left: 50%;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 1000px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #335E21;
+}
+
+a:hover {
+    color: white;
+}
+
+
+
+.form {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-top: 3%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    float: right;
+    width: 45%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    backdrop-filter: blur(25px);
+    border-radius: 20px;
+}
+
+#myform {
+    margin-left: 30%;
+    overflow: hidden;
+}
+
+input[type=button] {
+    width: 288px;
+    height: 219px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 20px;
+}
+
+input[type=text] {
+    width: 240px;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    display: list-item;
+    background: #F8F8F8;
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 240px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #619C46;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: none;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 100%;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+input[type=submit]:hover {
+    background-color: #88CA69;
+}
+
+#reload {
+    width: 240px;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #619C46;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: none;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.1em;
+    margin-left: 8%;
+}
+
+button:hover {
+    background-color: #88CA69;
+}
+
+#surprise {
+    position: absolute;
+    width: 240px;
+    padding: 12px;
+    box-shadow: 0px 4px 25px rgba(136, 202, 105, 0.15);
+    border-radius: 4px;
+    border: 1px solid white;
+    outline: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background-color: #88CA69;
+    letter-spacing: 0.1em;
+    left: 15%;
+    top: 90%
+}
+
+#surprise:hover {
+    background-color:#619C46;
+    border: none;
+}
+
+
+.output {
+    font-size: 120%;
+    text-align: center;
+    line-height: 1.5em;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.error {
+    color: #4f4f4f;
+    text-align: center;
+}
+
+
+
+#fish {
+    position: absolute;
+    left: 12%;
+    width: 20%;
+    z-index: -1;
+    animation: fish 5s infinite ease-in-out;
+}
+
+@keyframes fish {
+    0% {top: 35%;}
+    50% {top: 37%;}
+    100% {top: 35%;}
+}
+
+#fishflip {
+    position: absolute;
+    left: 12%;
+    top: 35%;
+    z-index: -1;
+    width: 20%;
+    animation: fishflip 2s ease-in-out;
+}
+
+@keyframes fishflip {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#shadow{
+    position: absolute;
+    top: 68%;
+    left: 18%;
+    z-index: -2;
+    animation: shadow 5s infinite ease-in-out;
+}
+@keyframes shadow {
+    0% {width: 12%;}
+    50% {width: 11%;}
+    100% {width: 12%;}
+}
+
+
+#water {
+    position: absolute;
+    top: 48%;
+    left: 7%;
+    z-index: -2;
+    width: 35%;
+}
+#grass {
+    position: absolute;
+    top: 62%;
+    left: 7%;
+    z-index: -2;
+    width: 35%;
+}
+
+
+#background {
+    position: absolute;
+    left:0;
+    width: auto;
+    opacity: 70%;
+    z-index: -3;
+}
