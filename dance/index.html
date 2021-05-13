@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dance</title>
+    
+    <style>
+        body {
+            padding: 0;
+            background-color: black;
+        }
+
+        img {
+            display: block;
+            width: 50%;
+        }
+   
+
+   </style>
+</head>
+
+<body>
+
+    <img src="imgs/dance-0.svg" alt="dancing">
+
+    <script>
+(function () {
+    'use strict';
+    document.addEventListener('mousemove', reportPos);
+    const theImg = document.querySelector('img');
+    let prevLoc = 0;
+
+function reportPos(event) {
+    const windowSize = window.innerWidth;
+    const percent2px = windowSize / 49;
+    const xPos = event.clientX;
+    const changePhoto = Math.floor(xPos / percent2px);
+
+
+
+if (changePhoto !== prevLoc) {
+    theImg.src = `imgs/dance-${changePhoto}.svg`;
+    prevLoc = changePhoto;
+    console.log(prevLoc);
+}
+}
+
+})();
+
+    </script>
+
+
+</body>
+
+</html>
